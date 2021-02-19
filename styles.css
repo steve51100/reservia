@@ -1,0 +1,826 @@
+/*TAILLE DESKTOP*/
+html{
+	max-width: 1600px;
+}
+/*BODY*/
+
+body{
+	font-family: 'Raleway', sans-serif;
+	width: 80%;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+/*HEADER > LOGO + NAV*/
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imgheader{
+	height: 50px;
+}
+
+nav{
+	margin-left: auto;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+nav li a{
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.navhebergements{
+	border-top: 3px solid;
+	color: #0065FC;
+	padding-top: 0.75em;
+}
+
+.navinscription{
+	font-size: 1rem;
+	color: #0065FC;
+	text-decoration: none;
+	font-weight: 650;
+	text-align: center;
+}
+
+.navactivites{
+	color: black;
+}
+
+/*MAIN*/
+
+main{
+	margin-bottom: 3%;
+}
+
+h1{
+	font-size: 1.4rem;
+}
+
+p{
+	font-size: 1rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*BOUTON DE RECHERCHE*/
+
+.barre_recherche{
+	display: flex;
+	margin-top: 20px;
+}
+
+.icone_carte{
+	background: #F2F2F2;
+	border: none;
+	padding: 0.9em;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+input{
+	padding: 0.8em;
+	font-size: 1em;
+	font-weight: bold;
+	border: solid #F2F2F2;
+}
+
+.bouton_recherche{
+	background: #0065FC;
+	border: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: white;
+	font-weight: 500;
+	font-size: 1em;
+	padding :1em;
+	position: relative;
+	right: 12px;
+}
+
+.bouton_loupe{
+	visibility: hidden;
+	color: white;
+	background: #0065FC;
+	border: none;
+	color: white;
+	font-weight: 500;
+	font-size: 1em;
+	padding :1em;
+	border-radius: 10px;
+	position: relative;
+	right: 140px;
+
+}
+
+/*FILTRES*/
+
+.filtres{
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.filtres h2{
+	margin-right: 1em;
+}
+
+.boutons_filtres{
+	margin-right: 1em;
+}
+
+.boutons_filtres i{
+	background-color: #C5E9FF;
+	border-radius: 25px;
+	padding: 1em;
+	color: #0065FC;
+}
+
+.boutons_filtres:hover{
+	background-color: #F2F2F2;
+	border-radius: 25px;
+	color: #0065FC;
+}
+
+.recherche_filtres{
+	border: solid #F2F2F2;;
+	border-radius: 50px;
+	padding: 0.8em;
+	font-weight: bold;
+}
+
+.recherche_filtres i{
+	position: relative;
+	right: 1em;
+}
+
+/*RESULTATS RECHERCHES*/
+
+.info_recherche{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.icone_info{
+	border: solid #F2F2F2;
+	padding: 0.5em;
+	border-radius: 30px;
+	color: #0065FC;
+	margin-right: 1em;
+	text-align: center;
+	height: 20px;
+	width :20px;
+}
+
+
+/*HEBERGEMENTS A MARSEILLE*/ /*POPULAIRES*/
+
+.blocs{
+	display: flex;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.hebergements{
+	background: #F2F2F2;
+	border-radius: 25px;
+	width: 750px;
+	height: 600px;
+	padding : 30px;
+	margin-right: 40px; 
+	order: 1;
+}
+
+.populaires{
+	background: #F2F2F2;
+	border-radius: 25px;
+	width: 350px;
+	height: 600px;
+	padding : 30px;
+	order: 2;
+}
+
+.icone_fleche{
+	position: relative;
+	bottom: 3.7%;
+	left: 95%;
+}
+
+h3{
+	margin: 5px;
+}
+
+.blocs_herbegements{
+	display: grid;
+	grid-template-columns: 33% 33% 33% ;
+	grid-template-rows: 50% 50%;
+	max-height: 530px;
+}
+
+.bloc{
+	background : white;
+	box-shadow: 0 0 10px grey;
+	border-radius: 25px;
+	margin: 20px 20px 20px 0;
+	padding :5px;
+}
+
+.bloc img{
+	width: 100%;
+	height: 55%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+.texte_hebergements{
+	position: relative;
+}
+
+.blocs_populaire{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 35% 35% 35%;
+}
+
+.bloc2{
+	background : white;
+	box-shadow: 0 0 10px grey;
+	border-radius: 25px;
+	margin: 20px 20px 20px 0;
+	padding :5px;
+	display: flex;
+}
+
+.bloc2 img{
+	width: 40%;
+	height: 100%;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	object-fit: cover;
+}
+
+.texte_populaire{
+	padding-right: 10%;
+}
+
+.bloc2 b{
+	position: relative;
+	top: 5%;
+}
+
+.bloc2 p{
+	position: relative;
+	left: 5%;
+	top: 5%;
+}
+
+.bloc2 .etoiles{
+	position: relative;
+	left: 5%;
+	top: 25px;
+
+}
+
+
+.etoiles-bleu{
+	color: #0065FC;
+}
+
+
+.etoiles-grise{
+	color: #F2F2F2; 
+}
+
+
+/*ACTIVITES*/
+
+h5{
+	font-size: 1.17rem;
+	margin-bottom: 0%;
+}
+
+.blocs_activites{
+	display: flex;
+}
+
+.vieux_port{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 1;
+
+}
+
+.vieux_port img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+.pomegues{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 2;
+
+}
+
+.pomegues img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+
+.frioul{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 3;
+
+}
+
+.frioul img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+
+.calanques{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 4;
+
+}
+
+.calanques img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+.notre_dame{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 5;
+
+}
+
+.notre_dame img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+.parc_longchamp{
+	background :white;
+	border-radius: 25px;
+	width: 280px;
+	height: 400px;
+	box-shadow: 0 0 10px grey;
+	margin: 20px 20px 20px 0;
+	order: 6;
+}
+
+.parc_longchamp img{
+	width: 100%;
+	height: 88%;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	object-fit: cover;
+
+}
+
+
+h6{
+	font-size: 1rem;
+	margin : 0 ;
+	position: relative;
+	top: 2%;
+	left: 5%;
+}
+
+footer{
+	max-width: 1600px;
+	background: #F2F2F2;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1280px) /*TAILLE TABLETTE*/
+{
+
+	/*BODY*/
+	body{
+		padding-right: 20%;
+		padding-left: 20%;
+		width: 100%;
+	}
+
+	/*RECHERCHE*/
+
+	.info_recherche{
+		margin-top: 10px;
+	}
+
+	.filtres{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/*BLOCS HEBERGEMENTS + POPULAIRES*/
+
+	.hebergements{
+		height: 850px;
+	}
+
+	.blocs_herbegements{
+		display: grid;
+		grid-template-columns: 50% 50% ;
+		grid-template-rows: 50% 50% 50%;
+		max-height: 530px;
+	}
+
+	h4{
+		position: relative;
+		top: 30%;
+	}
+
+	.populaires{
+		height: 850px;
+	}
+
+	.blocs_populaire{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50% 50%;
+		max-height: 530px
+	}
+
+	.icone_fleche{
+		position: relative;
+		bottom: 2.7%;
+		left: 95%;
+	}
+
+	.bloc2{
+		display: initial;
+		position: relative;
+		margin: 0 20px 40px 0;
+	}
+
+	.bloc2 img{
+		width: 100%;
+		height: 56%;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		border-bottom-left-radius: 0px;
+	}
+
+	.texte_populaire{
+		position: relative;
+		right: 3%
+	}
+
+	.bloc2 .etoiles{
+		position: relative;
+		top: 15px;
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 640px) /*TAILLE MOBILE*/
+{
+
+	/*BODY*/
+
+	body{
+		padding: 0;
+		width: 100%;
+	}
+
+	/*HEADER*/
+
+	.imgheader{
+		position: relative;
+
+	}
+
+	.navinscription{
+		position: absolute;
+		right: 0px;
+	}
+
+	nav{
+		position: absolute;
+		top: 50px;
+		margin: 0 25% 0 25%;
+	}
+
+	.navhebergements{
+		border-top: 3px transparent solid;
+		border-bottom: 3px solid;
+		padding-bottom: 0.8em;
+	}
+
+	.navactivites{
+		color: black;
+		border-bottom: 3px solid;
+		border-bottom-color: #D2D6D9;
+		padding-bottom: 0.8em;
+	}
+
+	/*RECHERCHES*/
+
+	.bouton_loupe {
+		visibility: visible;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.bouton_recherche{
+		visibility: hidden;
+	}
+
+	/*FILTRES*/
+
+	.filtres{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 5%;
+	}
+
+	.recherche{
+		margin-top: 70px;
+	}
+
+	/*BLOCS HEBERGEMENTS + POPULAIRE*/
+
+	.blocs{
+		flex-wrap: wrap;
+	}
+
+	.populaires{
+		order: 1;
+		border-radius: 0px;
+		width: auto;
+		height: auto;
+	}
+
+	.blocs_populaire{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 35% 35% 35%;
+		width: 85%;
+		height: 700px;
+	}
+
+	.bloc2 .etoiles{
+		position: absolute;
+		top: 80%;
+	}
+
+	.icone_fleche{
+		position: relative;
+		bottom: 25px;
+	}
+
+	.bloc2{
+		display: flex;
+		position: relative;
+		margin: 0 0 40px 0;
+	}
+
+	.bloc2 img{
+		width: 40%;
+		height: 100%;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 0px;
+	}
+
+	.texte_populaire{
+		position: relative;
+		right: 0%;
+		padding-right: 10px;
+	}
+
+	
+
+	.bloc{
+		margin : 20px 0 20px 0;
+	}
+
+	.blocs_herbegements{
+		display: grid;
+		grid-template-columns: 120% ;
+		grid-template-rows: 45% 45% 45% 45% 45% 45%;
+		width: 85%;
+
+	}
+
+	.hebergements{
+		background: none;
+		order: 2;
+		width: 75%;
+	}
+
+	.texte_hebergements{
+		padding-bottom: 5%;
+	}
+
+	h4{
+		position: relative;
+		top: 105%;
+	}
+
+	/*ACTIVITES*/
+
+	h5{
+		position: relative;
+		left: 6%;
+		margin-bottom: 0%;
+	}
+
+	.blocs_activites{
+		display: grid;
+		grid-template-columns: 120% ;
+	}
+
+	h6{
+	font-size: 1rem;
+	margin : 0 ;
+	position: relative;
+	top: 4%;
+	left: 3%;
+}
+
+
+	.activites{
+		position: relative;
+		top: 600px;
+	}
+
+	.vieux_port{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.vieux_port img{
+		width: 100%;
+		height: 78%;
+	}
+
+	.pomegues{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.pomegues img{
+		width: 100%;
+		height: 78%;
+	}
+
+	.frioul{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.frioul img{
+		width: 100%;
+		height: 78%;
+	}
+
+	.calanques{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.calanques img{
+		width: 100%;
+		height: 78%;
+	}
+
+	.notre_dame{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.notre_dame img{
+		width: 100%;
+		height: 78%;
+	}
+
+	.parc_longchamp{
+		width: 75%;
+		height: 200px;
+		position: relative;
+		left: 4%;
+	}
+
+	.parc_longchamp img{
+		width: 100%;
+		height: 78%;
+	}
+
+	footer{
+		width: auto;
+		background: #F2F2F2;
+		height: 400px;
+		position: relative;
+		top: 600px;
+		display: none;
+	}
+
+}
